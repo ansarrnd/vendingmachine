@@ -75,7 +75,7 @@
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>libs/</classpathPrefix>
                             <mainClass>
-                                org.vending.Main
+                                org.vending.App
                             </mainClass>
                         </manifest>
                     </archive>
