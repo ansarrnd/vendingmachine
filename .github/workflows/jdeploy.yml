@@ -27,5 +27,5 @@ jobs:
       - name: Build App Installer Bundles
         uses: shannah/jdeploy@master
         with:
-          target_repository: 'shannah/jdeploy-javafx-starter-releases'
+          target_repository: 'ansarrnd/vendingmachine'
           github_token: ${{ secrets.STEVE_PAT }}
