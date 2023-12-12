@@ -11,7 +11,7 @@ import javafx.scene.image.ImageView;
 import java.io.IOException;
 import java.util.Objects;
 
-public class TaskCell extends ListCell<Task> {
+public class ProductCell extends ListCell<Product> {
 
     @FXML
     private Label itemName;
@@ -22,7 +22,7 @@ public class TaskCell extends ListCell<Task> {
     @FXML
     private ImageView productImage;
 
-    public TaskCell() {
+    public ProductCell() {
         loadFXML();
     }
 
@@ -39,7 +39,7 @@ public class TaskCell extends ListCell<Task> {
     }
 
     @Override
-    protected void updateItem(Task item, boolean empty) {
+    protected void updateItem(Product item, boolean empty) {
         super.updateItem(item, empty);
 
         if(empty || item == null) {
@@ -47,8 +47,8 @@ public class TaskCell extends ListCell<Task> {
             setContentDisplay(ContentDisplay.TEXT_ONLY);
         }
         else {
-            itemName.setText(item.getTitle());
-            price.setText(item.getComment());
+            itemName.setText(item.getItemName());
+            price.setText(item.getPrice());
             Image fruitImage = new Image(Objects.requireNonNull(getClass().getResourceAsStream(getItemName(getIndex()+1))));
             productImage.setImage(fruitImage);
 
