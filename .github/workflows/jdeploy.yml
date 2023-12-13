@@ -27,5 +27,4 @@ jobs:
       - name: Build App Installer Bundles
         uses: shannah/jdeploy@master
         with:
-          target_repository: 'ansarrnd/vendingmachine'
           github_token: ${{ secrets.GITHUB_TOKEN }}

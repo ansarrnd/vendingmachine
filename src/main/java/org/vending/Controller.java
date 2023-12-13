@@ -41,7 +41,6 @@ public class Controller implements Observer {
         MultipleSelectionModel<Product> selectionModel = listView.getSelectionModel();
         selectionModel.setSelectionMode(SelectionMode.SINGLE);
         selectionModel.selectedItemProperty().addListener((observableValue, oldProduct, product) -> {
-
             itemName.setText(product.getItemName());
             price.setText(product.getPrice());
         });
@@ -69,13 +68,11 @@ public class Controller implements Observer {
                     String tmp;
                     while ((tmp = reader.readLine()) != null)
                         line.append(tmp);
-
-
                 } catch (IOException e1) {
                     e1.printStackTrace();
                 }
-                Gson gson = new Gson();
 
+                Gson gson = new Gson();
                 List<Product> products = gson.fromJson(String.valueOf(line), new TypeToken<List<Product>>(){}.getType());
 
                 ProductSingleton.getInstance().products.clear();
