@@ -5,9 +5,9 @@
         <groupId>ca.weblite</groupId>
         <version>1.0.7</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>com.jdeploy.demos</groupId>
-    <artifactId>sample</artifactId>
+    <modelVersion>1.0.0</modelVersion>
+    <groupId>com.vending</groupId>
+    <artifactId>vendingmachine</artifactId>
     <version>1.0.0</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
