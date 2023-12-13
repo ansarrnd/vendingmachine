@@ -5,7 +5,7 @@
         <groupId>ca.weblite</groupId>
         <version>1.0.7</version>
     </parent>
-    <modelVersion>1.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
     <groupId>com.vending</groupId>
     <artifactId>vendingmachine</artifactId>
     <version>1.0.0</version>
