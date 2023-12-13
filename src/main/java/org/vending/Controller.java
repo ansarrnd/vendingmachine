@@ -101,6 +101,7 @@ public class Controller implements Observer {
     }
 
     private void setItems() {
+        ProductSingleton.getInstance().products.clear();
         ObservableList<Product> wordsList = ProductSingleton.getInstance().products;
         wordsList.add(new Product("Banana 1KG Packed", "RM 4.00","description", 0));
         wordsList.add(new Product("Apple 1KG Packed", "RM 4.00","description", 1));
@@ -117,6 +118,6 @@ public class Controller implements Observer {
     @Override
     public void update(Observable o, Object arg) {
         listView.getItems().clear();
-        setItems();
+        listView.getItems().addAll(ProductSingleton.getInstance().products);
     }
 }
