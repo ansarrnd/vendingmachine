@@ -14,9 +14,12 @@ import java.net.URL;
  */
 public class App extends Application {
 
-    @Override
-    public void start(Stage stage) throws IOException {
+    public static void main(String[] args) {
+        launch(args);
+    }
 
+    @Override
+    public void start(Stage stage) throws Exception {
         FXMLLoader loader = new FXMLLoader();
         URL xmlUrl = getClass().getResource("/customer.fxml");
         loader.setLocation(xmlUrl);
@@ -25,10 +28,6 @@ public class App extends Application {
         stage.setTitle("Vending Machine");
         stage.setScene(new Scene(root));
         stage.show();
-    }
-
-    public static void main(String[] args) {
-        launch();
     }
 
 }
