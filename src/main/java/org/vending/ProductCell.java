@@ -28,7 +28,7 @@ public class ProductCell extends ListCell<Product> {
 
     private void loadFXML() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/product.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("product.fxml"));
             loader.setController(this);
             loader.setRoot(this);
             loader.load();
